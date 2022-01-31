@@ -53,6 +53,37 @@ boxplot(df.ex1$tx.juros,
         notch = T
 )
 
+# Uma versão dois, com retas indicando os pontos no gráfico
+# get quartile in r code (single line)
+media = round(mean(df.ex1$tx.juros),2)
+print(media)
+mediana = round(median(df.ex1$tx.juros),2)
+print(mediana)
+menorv = round(min(df.ex1$tx.juros),2)
+print(menorv)
+maiorv = round(max(df.ex1$tx.juros),2)
+print(maiorv)
+
+quartiz = round(quantile(df.ex1$tx.juros, prob=c(.25,.5,.75)),2)
+quartiz
+# 25%  50%  75% 
+#2.59 2.61 2.63 
+
+round(summary(df.ex1$tx.juros),2)
+#Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+#2.50    2.59    2.61    2.60    2.63    2.64 
+
+boxplot(df.ex1$tx.juros)
+
+abline(a = media, b = 0L, h = NULL, v = T)
+abline(a = mediana, b = 0L, h = NULL, v = T)
+abline(a = menorv, b = 0L, h = NULL, v = T)
+abline(a = maiorv, b = 0L, h = NULL, v = T)
+abline(a = quartiz[1], b = 0L, h = NULL, v = T)
+abline(a = quartiz[3], b = 0L, h = NULL, v = T)
+
+
+# Experiências ....
 
 #Outro gráfico
 plot(df.ex1$tx.juros, main = "Taxas de Juros Recebidas em Ações",
