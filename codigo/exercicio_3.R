@@ -1,3 +1,11 @@
+# Exercício 3
+# Numa pesquisa realizada com 100 famílias, levantaram-se as seguintes informações:
+# Número de filhos 0  1  2  3 4 5 Mais de 5
+# Famílias        17 20 28 19 7 4 5
+# Construir a planilha em Excel ou Calc (LibreOffice) com as informações acima.
+# Faça um programa em R para calcular e gerar os gráficos para: 1. A mediana do número de filhos; e
+# 2. A moda do número de filhos
+
 # A planilha foi digitada no Calc do software LibreOffice
 # Portanto precisamos da biblioteca readODS
 if(!("readODS") %in% installed.packages()) install.packages("readODS")
