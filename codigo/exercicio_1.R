@@ -1,3 +1,8 @@
+# Exercício 1
+# As taxas de juros recebidas por 10 ações durante um certo período foram (medidas em porcentagens) 2,59; 2,64; 2,60; 2,62; 2,57; 2,61; 2,50; 2,63; 2,64.
+# (Os dados estão na planilha Excel “exercicio1.xls”).
+# Faça um programa em R para calcular e gerar os gráficos da média, da mediana, do desvio padrão, da variância, do valor mínimo, do valor máximo e dos quartis Q1 e Q3.
+
 # Instalando biblioteca readxl para importar para o R arquivos com extensão .xls ou .xlsx.
 if (!("readxl") %in% installed.packages()) install.packages("readxl", lib = "D:/R/R-4.1.2/library")
 
