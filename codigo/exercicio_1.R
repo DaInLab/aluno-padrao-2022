@@ -1,8 +1,8 @@
 # Instalando biblioteca readxl para importar para o R arquivos com extensão .xls ou .xlsx.
-if (!("readxl") %in% installed.packages()) install.packages("readxl")
+if (!("readxl") %in% installed.packages()) install.packages("readxl", lib = "D:/R/R-4.1.2/library")
 
 # Carregando a biblioteca
-library(readxl)
+library(readxl, lib = "D:/R/R-4.1.2/library")
 
 # Importando o arquivo do exercício 1
 df.ex1 <- read_excel("./dados/exercicio1.xls",skip = 1, col_names = "tx.juros", col_types = c("numeric"))
